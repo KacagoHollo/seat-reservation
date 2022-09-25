@@ -51,6 +51,6 @@ const seat = {
     ]
 };
 
-seat.auditorium.forEach((item) => console.log(item));
-seat.balcony.forEach((item) => console.log(item));
+// seat.auditorium.forEach((item) => console.log(item));
+// seat.balcony.forEach((item) => console.log(item));
 export default seat;

@@ -1,10 +1,13 @@
 import './App.css';
-import seat from './data/seat';
+
+import Seats from './pages/Seats';
 
 function App() {
   return (
     <div className="App">
-
+      <div className='room'>
+              <Seats/>
+      </div>
     </div>
   );
 }

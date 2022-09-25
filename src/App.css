@@ -1,38 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: none;
+  box-sizing: border-box;
+  background: transparent;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+  display: block;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a,
+img {
+  border: none;
+}
+
+button,
+a {
+  cursor: pointer;
+  color: inherit;
+}
+
+textarea {
+  resize: none;
+}
+
+button,
+input,
+textarea,
+select {
+  appearance: none !important;
+  -webkit-appearance: none !important;
+  /* safari, opera, chrome miatt */
+  border-radius: 0;
+}
+
+/* CSS reset */
 .App {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.room {
+  margin-top: 15vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.auditorium, .balcony {
+  position: relative;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 80vw;
+  height: 40vh;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.A, .B, .C, .D, .E {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.balconyA, .balconyB {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Tier1, .Tier2, .Tier3 {
+  width: 30px;
+  height: 30px;
+  padding: 0 10px 0 10px;
+  margin: 0 5px 0 5px;
+
+  border: 1px solid black;
+}
+
+.Tier1 {
+  background-color: red;
+}
+.Tier2 {
+  background-color: yellow;
+}
+.Tier3 {
+  background-color: aqua;
 }

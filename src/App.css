@@ -84,7 +84,7 @@ select {
   justify-content: center;
 }
 
-.Tier1, .Tier2, .Tier3 {
+#Tier1, #Tier2, #Tier3 {
   width: 30px;
   height: 30px;
   padding: 0 10px 0 10px;
@@ -93,12 +93,22 @@ select {
   border: 1px solid black;
 }
 
-.Tier1 {
+#Tier1 {
   background-color: red;
 }
-.Tier2 {
+#Tier2 {
   background-color: yellow;
 }
-.Tier3 {
+#Tier3 {
   background-color: aqua;
+}
+
+.true {
+  cursor: pointer;
+}
+
+.false {
+  cursor: not-allowed;
+  background-color: darkgray !important;
+  color: darkgray !important;
 }

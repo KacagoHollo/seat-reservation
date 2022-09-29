@@ -1,5 +1,5 @@
-const seat = {
-    auditorium: [
+let seat = {
+    allSection: [
         {row: "A", seat: 1, category: "Tier1", isAvailable: true, section: "Auditorium"}, 
         {row: "A", seat: 2, category: "Tier1", isAvailable: true, section: "Auditorium"}, 
         {row: "A", seat: 3, category: "Tier1", isAvailable: true, section: "Auditorium"}, 
@@ -32,8 +32,7 @@ const seat = {
         {row: "E", seat: 2, category: "Tier3", isAvailable: true, section: "Auditorium"}, 
         {row: "E", seat: 3, category: "Tier3", isAvailable: true, section: "Auditorium"}, 
         {row: "E", seat: 4, category: "Tier3", isAvailable: true, section: "Auditorium"}, 
-    ],
-    balcony: [
+    
         {row: "A", seat: 1, category: "Tier2", isAvailable: true, section: "Balcony"},
         {row: "A", seat: 2, category: "Tier2", isAvailable: true, section: "Balcony"},
         {row: "A", seat: 3, category: "Tier1", isAvailable: true, section: "Balcony"},
